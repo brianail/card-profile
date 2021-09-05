@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100vh;
+}
+
+.card-profile {
+    width: 800px;
+    height: 80vh;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.192);
+    position: absolute;
+    top: 3rem;
+    left: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+header img {
+    border: 2px solid white;
+    border-radius: 100%;
+}
+
+.info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.info span {
+    padding: 0.3rem 0;
+    font-size: 1rem;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.area-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 0.5rem;
+    border-radius: 100%;
+    background-color: rgb(45, 196, 223);
+}
+
+i {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: black;
+}
+
+.projetos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.cards {
+    width: 60%;
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.cards a{
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+    font-size: 1.3rem;
+}
+
+.cards a:hover{
+    border-bottom: 3px solid black;
+}
+
+
+
+
+
+
+@media (max-width: 600px){
+    .card-profile {
+        width: 100%;
+        padding: 0.5rem;
+        height: auto;
+        border-radius: 2rem;
+        background-color: rgba(255, 255, 255, 0.192);
+        position: absolute;
+        top: 3rem;
+    }
+
+    .projetos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .cards {
+        width: 90%;
+        margin: 1rem;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        background-color: rgb(255, 255, 255);
+    
+    }
+}
