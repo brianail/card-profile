@@ -131,14 +131,31 @@ h2{
 }
 
 .btn{
-    width: 25%;
-    padding: 1rem;
+    width: 30%;
+    padding: 1.2rem;
     margin: 0.5rem;
     background: white;
-    border-radius: 1rem;
-
+    font-size: 1rem;
+    position: relative;
+    text-align: center;
+    color: black;
+    cursor: pointer;
 }
 
+.btn::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0.3rem;
+    background-color: rgb(101, 173, 255);
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover::after{
+    width: 100%;
+}
 
 .projetos {
     display: flex;
