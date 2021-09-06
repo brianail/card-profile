@@ -46,7 +46,7 @@
                 </div>
             </div>
 
-            <h1 id="titulo">Portfólio</h1>
+            <h3>Portfólio</h3>
 
             <div class="projetos">
                 <div class="cards">
@@ -195,5 +195,22 @@
         retina_detect: true
     });
 </script>
+
+<!-- Escrita de maquina de escrever -->
+<script>
+    function typeWrite(elemento) {
+      const textoArray = elemento.innerHTML.split('');
+      elemento.innerHTML = ' ';
+      textoArray.forEach(function (letra, i) {
+
+        setTimeout(function () {
+          elemento.innerHTML += letra;
+        }, 230 * i)
+
+      });
+    }
+    const titulo = document.querySelector('h3');
+    typeWrite(titulo);
+  </script>
 
 </html>
