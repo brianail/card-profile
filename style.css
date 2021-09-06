@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: none;
+    border: 0;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
@@ -22,13 +22,13 @@ body {
 }
 
 .card-profile {
-    width: 600px;
+    width: 700px;
     height: auto;
     border-radius: 2rem;
     background-color: rgba(67, 68, 68, 0.479);
     position: absolute;
     top: 3rem;
-    left: 30%;
+    left: 25%;
 }
 
 header {
@@ -89,7 +89,7 @@ i:hover{
 h3{
     text-align: center;
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 200;
     padding: 1rem;
 }
 
@@ -114,6 +114,31 @@ h3::after{
         opacity: 1;
     }
 }
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+h2{
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 200;
+
+}
+
+.btn{
+    width: 25%;
+    padding: 1rem;
+    margin: 0.5rem;
+    background: white;
+    border-radius: 1rem;
+
+}
+
 
 .projetos {
     display: flex;
@@ -168,8 +193,8 @@ h3::after{
     .cards {
         width: 90%;
         margin: 1rem;
-        padding: 0.5rem;
-        border-radius: 0.5rem;
+        padding: 1rem;
+        border-radius: 1rem;
         background-color: rgb(255, 255, 255);
     
     }
