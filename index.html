@@ -10,6 +10,16 @@
 
     <!-- ICONS  -->
     <script src="https://kit.fontawesome.com/4c65401d66.js" crossorigin="anonymous"></script>
+
+    <!-- script ScrollRevel -->
+    <script src="https://unpkg.com/scrollreveal">
+    </script>
+
+    <script>
+        ScrollReveal({
+            reset: true
+        });
+    </script>
 </head>
 
 <body>
@@ -199,18 +209,26 @@
 <!-- Escrita de maquina de escrever -->
 <script>
     function typeWrite(elemento) {
-      const textoArray = elemento.innerHTML.split('');
-      elemento.innerHTML = ' ';
-      textoArray.forEach(function (letra, i) {
+        const textoArray = elemento.innerHTML.split('');
+        elemento.innerHTML = ' ';
+        textoArray.forEach(function (letra, i) {
 
-        setTimeout(function () {
-          elemento.innerHTML += letra;
-        }, 230 * i)
+            setTimeout(function () {
+                elemento.innerHTML += letra;
+            }, 230 * i)
 
-      });
+        });
     }
     const titulo = document.querySelector('h3');
     typeWrite(titulo);
+</script>
+
+<!-- scrollrevel -->
+<script>
+    ScrollReveal().reveal('header')
+    ScrollReveal().reveal('.buttons')
+    ScrollReveal().reveal('h3')
+    ScrollReveal().reveal('.projetos')
   </script>
 
 </html>
