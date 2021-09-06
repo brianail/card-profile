@@ -136,10 +136,12 @@ section{
     margin: 0.5rem;
     background: white;
     font-size: 0.9rem;
+    border-radius: 1rem;
     position: relative;
     text-align: center;
     color: black;
     cursor: pointer;
+    clip-path: view-box;
 }
 
 .btn::after{
@@ -183,10 +185,6 @@ section{
 .cards a:hover{
     border-bottom: 3px solid black;
 }
-
-
-
-
 
 
 @media (max-width: 600px){
