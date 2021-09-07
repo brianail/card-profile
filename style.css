@@ -17,9 +17,16 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    
-    
 }
+
+#particles-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
 
 .card-profile {
     width: 700px;
@@ -194,14 +201,6 @@ section {
     border-bottom: 3px solid black;
 }
 
-#particles-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-  }
 
 
 @media (max-width: 600px) {
