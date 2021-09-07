@@ -42,7 +42,6 @@ canvas {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    z-index: 1000;
 }
 
 header {
