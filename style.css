@@ -9,27 +9,30 @@
 
 body {
     width: 100%;
-    height: 100vh;
-    background-color: black;
+    height: auto;
     color: white;
     font-family: 'Poppins', sans-serif;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-}
-
-#particles-js {
-    width: 100%;
-    height: 100vh;
+    
+    
 }
 
 .card-profile {
     width: 700px;
     height: auto;
-    padding: 1rem ;
-    border-radius: 2rem;
-    background-color: rgba(67, 68, 68, 0.479);
-    position: absolute;
-    top: 3rem;
-    left: 25%;
+    margin: 3rem 0;
+    padding: 1rem;
+    border-radius: 3rem;
+    background-color: rgba(61, 61, 61, 0.658);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1000;
 }
 
 header {
@@ -74,6 +77,8 @@ header img {
     margin: 0.5rem;
     border-radius: 100%;
     background-color: rgb(64, 44, 248);
+    -webkit-box-shadow: 0px 0px 47px 1px rgba(0, 0, 0, 0.57);
+    box-shadow: 0px 0px 47px 1px rgba(0, 0, 0, 0.57);
 }
 
 i {
@@ -166,10 +171,11 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .cards {
-    width: 60%;
+    width: 40%;
     margin: 1rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
@@ -188,16 +194,20 @@ section {
     border-bottom: 3px solid black;
 }
 
+#particles-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+
 
 @media (max-width: 600px) {
     .card-profile {
-        width: 100%;
+        width: 95%;
         padding: 0.5rem;
         height: auto;
         border-radius: 2rem;
-        position: absolute;
-        top: 3rem;
-        left: 0;
     }
 
     .projetos {
