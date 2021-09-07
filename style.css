@@ -201,8 +201,6 @@ section {
     border-bottom: 3px solid black;
 }
 
-
-
 @media (max-width: 600px) {
     .card-profile {
         width: 95%;
